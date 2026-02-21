@@ -4,6 +4,9 @@
 Built for speed. Engineered for scale. Designed to outpace.
 **Precision. Power. Performance.**
 
+![Scanner Demo](interface.png)
+
+
 ---
 
 ## ⚡ Core Features
