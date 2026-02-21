@@ -1,53 +1,74 @@
-# 🦇 NCI SCANNER v3.5  
-Advanced Web Recon Engine  
+# 🦇 NCI SCANNER v3.5
+
+**Advanced Web Recon Engine**
 Built for speed. Engineered for scale. Designed to outpace.
-Precision. Power. Performance.
+**Precision. Power. Performance.**
+
 ---
-###
 
-⚡️ High-throughput async architecture
-🌐 Intelligent HTTP/1.1 & HTTP/2 handling
-🛡 Multi-layer detection with advanced evasion logic
-🎯 High-speed pattern recognition engine
-🔁 Smart rotating fingerprints & adaptive request flow
-🚀 Lock-free performance under extreme load
-🧠 Adaptive thread scaling for large target sets
+## ⚡ Core Features
 
+* High-throughput asynchronous architecture
+* Intelligent HTTP/1.1 & HTTP/2 handling
+* Multi-layer detection with advanced evasion logic
+* High-speed pattern recognition engine
+* Smart rotating fingerprints & adaptive request flow
+* Lock-free performance under extreme load
+* Adaptive thread scaling for large target sets
+
+---
 
 ## 🚀 Getting Started
 
-### 1️⃣ Create Account & Activate Trial
+### 1️⃣ Create an Account & Activate Trial
 
-- Use **@nci_manager_bot** to create a new user account.
-- After registration, activate the **1-day trial subscription**.
-- Once the trial is active, you can access and use the tool.
+1. Open Telegram and contact **@nci_manager_bot**.
+2. Create a new user account.
+3. Activate the **1-day trial subscription**.
+4. Once activated, you can access and use the tool.
 
 ---
 
-## 📂 Importing Local Files
+## 📂 Importing Local Data Files
 
-To import your local data:
+To import your local data correctly, follow these steps:
 
-1. Locate the compressed `data` archive.
-2. Unzip the archive in the **same directory** as the main tool executable.
- Your structure should look like this:
- -nci_scanner.exe
- -/data
- --404.txt
-4. Open the `/data` folder.
-5. Ensure all TXT files inside are in json format**.
-6. Update your custom JSON data on TXT files into the `/data` directory.
+### Step 1: Extract the Archive
 
-The tool will automatically detect and process all JSON files inside `/data`.
+* Locate the compressed `data` archive.
+* Extract (unzip) the archive in the **same directory** as the main executable.
+
+Your directory structure should look like this:
+
+```
+/nci_scanner.exe
+/data/
+   ├── 404.txt
+   ├── path.txt
+   └── pathkey.txt
+```
+
+### Step 2: Verify File Format
+
+* Open the `/data` folder.
+* Ensure **all `.txt` files contain valid JSON-formatted content**.
+* Update or replace the JSON data inside these `.txt` files as needed.
+
+> The tool automatically detects and processes all JSON-formatted `.txt` files inside the `/data` directory.
 
 ---
 
 ## 🛡 Disclaimer
 
-For authorized security testing and research purposes only.  
-Unauthorized usage is strictly prohibited.
+This tool is intended **strictly for authorized security testing and research purposes only**.
+
+Any unauthorized use, scanning, or testing of systems without explicit permission is strictly prohibited and may violate applicable laws.
 
 ---
 
-NCI SCANNER v3.5  
+## 📌 Version Information
+
+**NCI SCANNER v3.5**
 Nuclear Crime Investigation Corps © 2026
+
+---
