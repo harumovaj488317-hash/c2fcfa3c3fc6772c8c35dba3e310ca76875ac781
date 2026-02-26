@@ -35,8 +35,34 @@ Built for speed. Engineered for scale. Designed to outpace.
 
 ## 📂 Importing Local Data Files
 
-To import your local data correctly, follow these steps:
 
+To import your local data:
+
+| Slot | What it controls |
+|---|---|
+| `indikey` | Keywords that identify a shell |
+| `pathkey` | Keywords that identify a shell |
+| `indi` | Directory paths /admin/ |
+| `path` | File paths `/c99.php` |
+| `404` | FORCE WAF BYPASS |
+
+
+### Two Accepted File Formats
+
+**JSON array** (works in both `.json` and `.txt`):
+```json
+["/vuln.php","/test.php","/findme.php"]
+```
+**Plain text** (`.txt` only, one entry per line):
+```
+/shell.php
+/c99.php
+#this hash is a NORMAL keyword, not a comment
+<---#nci#---> this whole line is skipped
+/index.php<---#nci#--->this part is stripped, /index.php kept
+```
+
+To import your local data correctly, follow these steps:
 ### Step 1: Extract the Archive
 
 * Locate the compressed `data` archive.
@@ -55,12 +81,19 @@ Your directory structure should look like this:
 ### Step 2: Verify File Format
 
 * Open the `/data` folder.
-* Ensure **all `.txt` files contain valid JSON-formatted content**.
-* Update or replace the JSON data inside these `.txt` files as needed.
+* Make sure all TXT (`.txt`) and JSON (`.json`) files are in the correct format and located inside the `/data` folder (e.g., `data/404.txt`, `data/404.json`).  
+* Update or Add or update any custom `.txt` or `.json`  files as needed. in the `/data` directory.
 
 > The tool automatically detects and processes all JSON-formatted `.txt` files inside the `/data` directory.
 
----
+**Don't use when:**
+- Running on a machine without the `data/` folder — tool will be run without any issue, no setup needed
+
+### What to Avoid
+
+- **Partial JSON** — if a `.json` file has even one quote/bracket error, the whole file is skipped. Use `.txt` plain text if you're editing manually.
+- **Wrong folder location** — `data/` must be next to the binary, not inside src. If the tool is run from a different working directory, the path won't resolve.
+- **Empty files** — a zero-byte file is silently skipped. The slot falls through to the next option.
 
 ## 🛡 Disclaimer
 
