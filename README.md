@@ -43,7 +43,7 @@ To import your local data:
 | `indikey` | Keywords that identify a shell |
 | `pathkey` | Keywords that identify a shell |
 | `indi` | Directory paths /admin/ |
-| `path` | File paths `/c99.php` |
+| `path` | File paths `/vuln.php` |
 | `404` | FORCE WAF BYPASS |
 
 
