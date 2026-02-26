@@ -92,7 +92,7 @@ Your directory structure should look like this:
 ### What to Avoid
 
 - **Partial JSON** — if a `.json` file has even one quote/bracket error, the whole file is skipped. Use `.txt` plain text if you're editing manually.
-- **Wrong folder location** — `data/` must be next to the binary, not inside src. If the tool is run from a different working directory, the path won't resolve.
+- **Wrong folder location** — `data/` must be next to the binary exe. If the tool is run from a different working directory, the path won't resolve.
 - **Empty files** — a zero-byte file is silently skipped. The slot falls through to the next option.
 
 ## 🛡 Disclaimer
